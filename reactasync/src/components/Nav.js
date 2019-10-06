@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom';
 
 import Home from './Home';
@@ -6,8 +6,7 @@ import Page1 from './Page1.js';
 import Page2 from './Page2.js';
 import Page3 from './Page3.js';
 
-export default class Nav extends Component {
-    render() {
+function Nav () {
         return (
             <div>
                 <nav>
@@ -28,5 +27,6 @@ export default class Nav extends Component {
                 </nav>
             </div>
         )
-    }
 }
+
+export default Nav;

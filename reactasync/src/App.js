@@ -2,11 +2,10 @@ import React from 'react';
 import './App.css';
 
 import Home from "./components/Home.js";
-import Page1 from "./components/Page1.js";
+import Page1 from "./components/Page1";
 import Page2 from "./components/Page2.js";
 import Page3 from "./components/Page3.js";
-import Nav from "./components/Nav.js";
-
+import Nav from "./components/Nav";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
