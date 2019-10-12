@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from 'react'
 
-function Page1() {
+function Astronauts() {
 
     useEffect( ()=> {
         fetchItems();
@@ -15,7 +15,6 @@ function Page1() {
         const items = await data.json();
         setItems(items.people);
         setItems1(items.number);
-
     }
 
         return (
@@ -31,4 +30,4 @@ function Page1() {
         )
 }
 
-export default Page1;
+export default Astronauts;

@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Home from "./components/Home.js";
-import Page1 from "./components/Page1";
-import Page2 from "./components/Page2.js";
-import Page3 from "./components/Page3.js";
+import Astronauts from "./components/Astronauts";
 import Nav from "./components/Nav";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -16,9 +14,7 @@ function App() {
           <Nav/>
           <Switch>
             <Route path="/" exact component={Home}/>
-            <Route path="/page1" component={Page1}/>
-            <Route path="/page2" component={Page2}/>
-            <Route path="/page3" component={Page3}/>
+            <Route path="/astronauts" component={Astronauts}/>
           </Switch>
         </Router>
         </nav>

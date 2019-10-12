@@ -11,13 +11,7 @@ function Nav () {
                             <Link to="/">Home </Link>  
                         </li>
                         <li>
-                             <Link to="/Page1">Page1 </Link>
-                        </li>
-                        <li>
-                            <Link to="/Page2">Page2 </Link>
-                        </li>
-                        <li>
-                            <Link to="/Page3"> Page3 </Link>
+                             <Link to="/Astronauts">Astronauts </Link>
                         </li>
                     </ul>
                 </nav>
