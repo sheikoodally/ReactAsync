@@ -6,21 +6,24 @@ function Page1() {
         fetchItems();
     }, [])
 
-    const [items, setItems] = useState([]); 
+    const [items, setItems] = useState([]);
+    const [number, setItems1] = useState(); 
 
     const fetchItems = async () => {
         const data = await fetch('http://api.open-notify.org/astros.json');
-        console.log(data);
 
         const items = await data.json();
-        console.log(items);
-        //setItems(items.number);
         setItems(items.people);
+        setItems1(items.number);
+
     }
 
         return (
             <div>
-                <h3>page 1</h3>
+                <h3>Number of people on Space Now:</h3>
+                <h4>{number}</h4>
+
+                <h3>Names of people on Space:</h3>
                 {items.map(item =>(
                     <h4 key={item.name}>{item.name}</h4>
                 ))}
