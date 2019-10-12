@@ -1,10 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 
-import Home from './Home';
-import Page1 from './Page1.js';
-import Page2 from './Page2.js';
-import Page3 from './Page3.js';
 
 function Nav () {
         return (
@@ -12,16 +8,16 @@ function Nav () {
                 <nav>
                     <ul>
                         <li> 
-                            <Link to="/"><Home/> </Link>  
+                            <Link to="/">Home </Link>  
                         </li>
                         <li>
-                             <Link to="/Page1"><Page1/> </Link>
+                             <Link to="/Page1">Page1 </Link>
                         </li>
                         <li>
-                            <Link to="/Page2"><Page2/> </Link>
+                            <Link to="/Page2">Page2 </Link>
                         </li>
                         <li>
-                            <Link to="/Page3"> <Page3/> </Link>
+                            <Link to="/Page3"> Page3 </Link>
                         </li>
                     </ul>
                 </nav>
